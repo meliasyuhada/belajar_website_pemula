@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Floating</title>
+
+    <!-- style -->
+    <style>
+        * { 
+            /* digunakan untuk menghilangkan padding dan margin di browser */
+            margin: 0;
+            padding: 0;
+
+            box-sizing:border-box;
+            /* digunakan untuk perhitungan dimensi boxnya */
+        }
+        .container {
+            width: 800px;
+            height: 400px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .left-content {
+            text-align: center;
+            line-height: 400px;
+            width: 30%;
+            height: 100%;
+            background-color: cadetblue;
+
+            float: left;
+            /* digunakan untuk mengarahkan elemen atau menempatkan posisi elemen ke kiri kontainer */
+        }
+        .right-content {
+            text-align: center;
+            line-height: 400px;
+            width: 70%;
+            height: 100%;
+            background-color: palevioletred;
+
+            float: right;
+            /* digunakan untuk mengarahkan elemen atau menempatkan posisi elemen ke kanan kontainer */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <h3>Left Content</h3>
+        </div>
+        <div class="right-content">
+            <h3>Right Content</h3>
+        </div>
+    </div>
+</body>
+</html>

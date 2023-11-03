@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .flex-column {
+                display: flex;
+                flex-direction: column;
+                /* flex direction merupakan properti flex */
+                width: 800px;
+                height: 300px;
+                background-color: #11c5c6;
+                border: 2px solid black;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+            }
+            .flex-row {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+                padding: 20px;
+                margin: 5px;
+                background-color: #FBDD1C;
+                border-radius: 10px;
+                border: 2px solid black;
+            }
+            .box {
+                flex-grow: 1;
+                /* flex-basis: 25%; */
+                /* flex-basis merupakan salah satu properti flex */
+                background-color: #fe899a;
+                margin: 5px;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-column">
+            <div class="flex-row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="flex-row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </body>
+</html>
